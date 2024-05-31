@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess Game Arena Duel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:#212121; color:#fff;">
+
+    <div id="wrapper">
+        <h1>Guess Game Arena Duel</h1>
+        <p>Try and guess a random number between 1 and 100.</p>
+        <p>Each player has 8 attempts to guess the right number.</p>
+        <br/>
+        <div class="player-info">
+            <p>Current Player: <span id="currentPlayer">Player 1</span></p>
+            <p>Player 1 Score: <span id="player1Score">0</span></p>
+            <p>Player 2 Score: <span id="player2Score">0</span></p>
+        </div>
+        <form class="form">
+            <div><label for="guessField" id="guess">Guess a number</label></div>
+            <div><input type="text" id="guessField" class="guessField"></div>
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult"></span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

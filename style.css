@@ -1,0 +1,129 @@
+/* style.css */
+
+/* Reset default margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font family */
+html {
+    font-family: sans-serif;
+}
+
+/* Body Styles */
+body {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #212121;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    background-color: #58046d;
+    color: #fff;
+    padding: 10px; /* Reduced padding */
+    margin-top: 0;
+    font-size: 24px; /* Adjusted font size */
+    line-height: 1.2; /* Adjusted line height */
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px; /* Adjusted font size */
+    text-align: center;
+    margin-bottom: 10px; /* Reduced margin */
+    line-height: 1.4; /* Adjusted line height */
+}
+
+/* Form Styles */
+.form {
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Reduced margin */
+    color: #fff;
+}
+
+input[type="text"] {
+    width: 45%;
+    padding: 8px; /* Reduced padding */
+    font-size: 18px; /* Adjusted font size */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+input[type="submit"] {
+    background-color: #58046d;
+    color: #fff;
+    width: 45%;
+    padding: 10px; /* Reduced padding */
+    font-size: 18px; /* Adjusted font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #72078d;
+}
+
+/* Result Paragraph Styles */
+.resultParas {
+    text-align: center;
+}
+
+.lastResult, .guesses {
+    color: white;
+    background-color: #7a7a7a;
+    padding: 8px 12px; /* Reduced padding */
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.lowOrHi {
+    font-style: italic;
+    margin-top: 8px; /* Reduced margin */
+    color: #fff;
+}
+
+/* Wrapper Styles */
+#wrapper {
+    box-sizing: border-box;
+    text-align: center;
+    width: 85%; /* Adjusted width for responsiveness */
+    max-width: 500px; /* Reduced max-width */
+    margin: 0 auto;
+    padding: 10px; /* Reduced padding */
+    background-color: #474747;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Player Info Styles */
+.player-info {
+    text-align: center;
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 16px; /* Adjusted font size */
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    input[type="text"], input[type="submit"] {
+        width: 90%;
+    }
+
+    #wrapper {
+        width: 95%;
+        padding: 8px; /* Reduced padding */
+    }
+}
